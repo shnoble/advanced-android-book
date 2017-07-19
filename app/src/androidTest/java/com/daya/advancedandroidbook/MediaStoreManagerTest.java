@@ -1,6 +1,8 @@
 package com.daya.advancedandroidbook;
 
+import android.content.Context;
 import android.database.Cursor;
+import android.support.test.InstrumentationRegistry;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,11 +12,11 @@ import org.junit.Test;
  */
 public class MediaStoreManagerTest {
 
-
     @Test
-    public static void getImage() throws Exception {
+    public void getImage() throws Exception {
+        Context context = InstrumentationRegistry.getTargetContext();
         MediaStoreManager mediaStoreManager = new MediaStoreManager();
-        Cursor cursor = mediaStoreManager.getImage();
+        Cursor cursor = mediaStoreManager.getImage(context);
         Assert.assertNotNull(cursor);
     }
 }
