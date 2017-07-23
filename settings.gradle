@@ -1,1 +1,1 @@
-include ':app', ':content-provider-sample'
+include ':content-provider-sample'
