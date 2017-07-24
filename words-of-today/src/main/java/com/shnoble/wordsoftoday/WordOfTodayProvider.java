@@ -12,6 +12,8 @@ import android.net.Uri;
 import android.util.Log;
 
 import static android.provider.BaseColumns._ID;
+import static com.shnoble.wordsoftoday.WordsOfTodayContract.MIME_TYPE_DIR;
+import static com.shnoble.wordsoftoday.WordsOfTodayContract.MIME_TYPE_ITEM;
 import static com.shnoble.wordsoftoday.WordsOfTodayContract.TABLE_NAME;
 import static com.shnoble.wordsoftoday.WordsOfTodayDbHelper.DB_NAME;
 import static com.shnoble.wordsoftoday.WordsOfTodayDbHelper.DB_VERSION;
@@ -38,21 +40,69 @@ public class WordOfTodayProvider extends ContentProvider {
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
-        // Implement this to handle requests to delete one or more rows.
-        throw new UnsupportedOperationException("Not yet implemented");
+        int count = 0;
+        switch (sUriMatcher.match(uri)) {
+            case ROW_ITEM:
+                int id =  (int) ContentUris.parseId(uri);
+                synchronized (mDbHelper) {
+                    Log.d(TAG, "delete(item) id=" + id);
+                    SQLiteDatabase db = mDbHelper.getWritableDatabase();
+                    count = db.delete(TABLE_NAME, _ID+"=?", new String[]{ Long.toString(id) });
+                    if (count > 0) {
+                        getContext().getContentResolver().notifyChange(uri, null);
+                    }
+                }
+                break;
+            case ROW_DIR:
+                synchronized (mDbHelper) {
+                    Log.d(TAG, "delete(dir)");
+                    SQLiteDatabase db = mDbHelper.getWritableDatabase();
+                    count = db.delete(TABLE_NAME, selection, selectionArgs);
+                    if (count > 0) {
+                        getContext().getContentResolver().notifyChange(uri, null);
+                    }
+                }
+                break;
+            default:
+                throw new IllegalArgumentException("인수의 URI가 틀렸습니다.");
+        }
+        return count;
     }
 
     @Override
     public String getType(Uri uri) {
-        // TODO: Implement this to handle requests for the MIME type of the data
-        // at the given URI.
-        throw new UnsupportedOperationException("Not yet implemented");
+        switch (sUriMatcher.match(uri)) {
+            case ROW_DIR:
+                return MIME_TYPE_DIR;
+            case ROW_ITEM:
+                return MIME_TYPE_ITEM;
+            default:
+                return null;
+        }
     }
 
     @Override
     public Uri insert(Uri uri, ContentValues values) {
-        // TODO: Implement this to handle requests to insert a new row.
-        throw new UnsupportedOperationException("Not yet implemented");
+        Uri resultUri = null;
+        switch (sUriMatcher.match(uri)) {
+            case ROW_DIR:
+                synchronized (mDbHelper) {
+                    SQLiteDatabase db = mDbHelper.getWritableDatabase();
+                    long lastId = db.insert(TABLE_NAME, null, values);
+                    resultUri = ContentUris.withAppendedId(uri, lastId);
+                    Log.d(TAG, "WordsOfTodayProvider insert " + values);
+
+                    // 변경 통지
+                    Context context = getContext();
+                    if (context != null) {
+                        context.getContentResolver().notifyChange(resultUri, null);
+                    }
+                }
+                break;
+            default:
+                throw  new IllegalArgumentException("인수의 URI가 틀렸습니다");
+        }
+        return resultUri;
     }
 
     @Override
@@ -105,7 +155,33 @@ public class WordOfTodayProvider extends ContentProvider {
     @Override
     public int update(Uri uri, ContentValues values, String selection,
                       String[] selectionArgs) {
-        // TODO: Implement this to handle requests to update one or more rows.
-        throw new UnsupportedOperationException("Not yet implemented");
+        int count = 0;
+        switch (sUriMatcher.match(uri)) {
+            case ROW_ITEM:
+                Log.d(TAG, "update(item) values " + values);
+                int id = (int) ContentUris.parseId(uri);
+                synchronized (mDbHelper) {
+                    SQLiteDatabase db = mDbHelper.getWritableDatabase();
+                    count = db.update(TABLE_NAME, values, _ID + "=?", new String[] { Long.toString(id) });
+                    if (count > 0) {
+                        // 변경통지
+                        getContext().getContentResolver().notifyChange(uri, null);
+                    }
+                }
+                break;
+            case ROW_DIR:
+                Log.d(TAG, "update(dir) values=" + values);
+                synchronized (mDbHelper) {
+                    SQLiteDatabase db = mDbHelper.getWritableDatabase();
+                    count = db.update(TABLE_NAME, values, selection, selectionArgs);
+                    if (count > 0) {
+                        // 변경통지
+                        getContext().getContentResolver().notifyChange(uri, null);
+                    }
+                }
+            default:
+                throw new IllegalArgumentException("인수의 URI가 틀렸습니다");
+        }
+        return count;
     }
 }
