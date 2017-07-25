@@ -1,0 +1,87 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:2:1-17:12
+	package
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:3:5-57
+		INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml
+		INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml
+		INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml
+		INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml
+application
+ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:5:5-15:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Shnoble/.android/build-cache/aa407eaf250204401b429e8ebd79c04962feb1f0/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/Shnoble/.android/build-cache/2f80290c7ed7ee67a5357d19450368e879c70a8d/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/Shnoble/.android/build-cache/0bf573e8fd3862046a4c92b5d623870e69b1ef7c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Shnoble/.android/build-cache/02cbad590ec81a6f4d83f5a6be2338c7f2923a54/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Shnoble/.android/build-cache/d1f74363a3b2644bac1a747b23f3e6d6b6780f52/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Shnoble/.android/build-cache/5d0a3858d9176cf9c7e9cfdc91840f4c92bcb2b7/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Shnoble/.android/build-cache/00ffdeb67086bb926773e4c3cfe393206a9431cd/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Shnoble/.android/build-cache/dbfd480807328cddb67cd12bb3c5db9f0b1d4abb/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/Shnoble/.android/build-cache/58d9e98e737e0055d17a031e4f5677a1cb5f449a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta2] /Users/Shnoble/.android/build-cache/5563a956688bddaf9467a70245199830953b887d/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:6:9-41
+	android:supportsRtl
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:7:9-35
+	android:roundIcon
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:6:42-87
+	android:allowBackup
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:5:18-44
+	android:icon
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:5:45-79
+	android:theme
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:7:36-67
+activity#com.shnoble.volumechangedbroadcastreceiver.MainActivity
+ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:8:9-14:20
+	android:name
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:8:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:9:13-13:29
+action#android.intent.action.MAIN
+ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:10:17-69
+	android:name
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:10:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:12:17-77
+	android:name
+		ADDED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml:12:27-74
+uses-sdk
+INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Shnoble/.android/build-cache/aa407eaf250204401b429e8ebd79c04962feb1f0/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] /Users/Shnoble/.android/build-cache/2f80290c7ed7ee67a5357d19450368e879c70a8d/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/Shnoble/.android/build-cache/0bf573e8fd3862046a4c92b5d623870e69b1ef7c/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Shnoble/.android/build-cache/02cbad590ec81a6f4d83f5a6be2338c7f2923a54/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Shnoble/.android/build-cache/d1f74363a3b2644bac1a747b23f3e6d6b6780f52/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Shnoble/.android/build-cache/5d0a3858d9176cf9c7e9cfdc91840f4c92bcb2b7/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Shnoble/.android/build-cache/00ffdeb67086bb926773e4c3cfe393206a9431cd/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Shnoble/.android/build-cache/dbfd480807328cddb67cd12bb3c5db9f0b1d4abb/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] /Users/Shnoble/.android/build-cache/58d9e98e737e0055d17a031e4f5677a1cb5f449a/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta2] /Users/Shnoble/.android/build-cache/5563a956688bddaf9467a70245199830953b887d/output/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/Shnoble/.android/build-cache/aa407eaf250204401b429e8ebd79c04962feb1f0/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml
+		INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml
+		INJECTED from /Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/Shnoble/.android/build-cache/aa407eaf250204401b429e8ebd79c04962feb1f0/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/Shnoble/.android/build-cache/2f80290c7ed7ee67a5357d19450368e879c70a8d/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/Shnoble/.android/build-cache/0bf573e8fd3862046a4c92b5d623870e69b1ef7c/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Shnoble/.android/build-cache/02cbad590ec81a6f4d83f5a6be2338c7f2923a54/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Shnoble/.android/build-cache/d1f74363a3b2644bac1a747b23f3e6d6b6780f52/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Shnoble/.android/build-cache/5d0a3858d9176cf9c7e9cfdc91840f4c92bcb2b7/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Shnoble/.android/build-cache/00ffdeb67086bb926773e4c3cfe393206a9431cd/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Shnoble/.android/build-cache/dbfd480807328cddb67cd12bb3c5db9f0b1d4abb/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/Shnoble/.android/build-cache/58d9e98e737e0055d17a031e4f5677a1cb5f449a/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/Shnoble/.android/build-cache/aa407eaf250204401b429e8ebd79c04962feb1f0/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/Shnoble/.android/build-cache/aa407eaf250204401b429e8ebd79c04962feb1f0/output/AndroidManifest.xml:26:9-47
