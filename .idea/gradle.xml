@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/content-provider-sample" />
+            <option value="$PROJECT_DIR$/volume-changed-broadcast-receiver" />
             <option value="$PROJECT_DIR$/words-of-today" />
           </set>
         </option>
