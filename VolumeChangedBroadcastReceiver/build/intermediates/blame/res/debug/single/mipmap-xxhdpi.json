@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
+        "source": "/Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Project/Github/advanced-android-book/VolumeChangedBroadcastReceiver/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    }
+]

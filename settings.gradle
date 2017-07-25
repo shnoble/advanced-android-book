@@ -1,1 +1,1 @@
-include ':content-provider-sample', ':words-of-today'
+include ':content-provider-sample', ':words-of-today', ':volume-changed-broadcast-receiver'
