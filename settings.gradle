@@ -1,1 +1,1 @@
-include ':content-provider-sample', ':words-of-today', ':VolumeChangedBroadcastReceiver', ':MusicPlayerService'
+include ':content-provider-sample', ':words-of-today', ':VolumeChangedBroadcastReceiver', ':MusicPlayerService', ':IntentServiceSample'
