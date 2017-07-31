@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/MusicPlayerService" />
             <option value="$PROJECT_DIR$/VolumeChangedBroadcastReceiver" />
             <option value="$PROJECT_DIR$/content-provider-sample" />
             <option value="$PROJECT_DIR$/words-of-today" />
