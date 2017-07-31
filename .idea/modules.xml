@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MusicPlayerService/MusicPlayerService.iml" filepath="$PROJECT_DIR$/MusicPlayerService/MusicPlayerService.iml" />
       <module fileurl="file://$PROJECT_DIR$/VolumeChangedBroadcastReceiver/VolumeChangedBroadcastReceiver.iml" filepath="$PROJECT_DIR$/VolumeChangedBroadcastReceiver/VolumeChangedBroadcastReceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/advanced-android-book.iml" filepath="$PROJECT_DIR$/advanced-android-book.iml" />
       <module fileurl="file://$PROJECT_DIR$/content-provider-sample/content-provider-sample.iml" filepath="$PROJECT_DIR$/content-provider-sample/content-provider-sample.iml" />
